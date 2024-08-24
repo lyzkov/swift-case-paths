@@ -292,6 +292,8 @@ extension AttributeListSyntax.Element {
       if let availability = ifConfig.availability {
         return .ifConfigDecl(availability)
       }
+    default:
+      return nil
     }
     return nil
   }
